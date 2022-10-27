@@ -12,6 +12,11 @@ body {
   color: var(--dark-color-font);
 }
 .section-title-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   background-color: #2f303a;
   height: 600px;
 }
@@ -22,7 +27,6 @@ body {
 .section-team-style {
   background-color: #f5f4fa;
 }
-/* stylowanie przycisków na stronie Portfolio */
 .button-style {
   height: 38px;
   border: none;
@@ -31,7 +35,6 @@ body {
   cursor: pointer;
   color: ver(--dark-color-font);
 }
-/* stylowanie przycisków na stronie Portfolio */
 .button-font {
   font-family: Roboto;
   font-weight: 500;
@@ -48,7 +51,6 @@ body {
   color: var(--white);
 }
 .button-style-main {
-  display: block;
   width: 200px;
   height: 50px;
   padding: 0 0;
@@ -95,16 +97,14 @@ body {
   text-decoration: none;
 }
 .main-title-style {
-  display: block;
   width: 650px;
-  height: 120px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.16;
+  line-height: 1.37;
   text-align: center;
   letter-spacing: 6%;
   text-transform: uppercase;
@@ -123,7 +123,7 @@ body {
 .name-style {
   font-size: 16px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 30px;
   font-style: medium;
   line-height: 1.19;
   letter-spacing: 3%;
@@ -144,6 +144,7 @@ body {
 }
 .team-position {
   margin-top: 10px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 3%;
@@ -157,8 +158,7 @@ body {
   font-size: 14px;
   line-height: 1;
   letter-spacing: 2%;
-  width: 295px;
-  row-gap: 50px;
+  gap: 50px;
   margin: 0;
   padding: 0;
   color: var(--less-dark-color-font);
@@ -166,8 +166,7 @@ body {
 .links-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 254px;
+  gap: 46px;
   font-family: Roboto;
   font-style: 700;
   font-size: 14px;
@@ -175,14 +174,13 @@ body {
   letter-spacing: 2%;
   padding: 0;
   margin: 0;
-  margin-right: 371px;
   color: var(--dark-color-font);
 }
 .links-footer {
   font-family: Roboto;
   font-style: Regular;
   font-size: 14px;
-  line-height: 1.46;
+  line-height: 1.5;
   letter-spacing: 3%;
   padding-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
@@ -213,13 +211,14 @@ body {
 .logo-style {
   text-decoration: none;
   width: 145px;
-  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .adress {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.46;
+  line-height: 1.5;
   letter-spacing: 3%;
   margin-top: 0;
   margin-bottom: 0;
@@ -233,6 +232,7 @@ body {
   line-height: 1.71;
   letter-spacing: 6%;
   padding-top: 20px;
+  padding-left: 24px;
   margin: 0 0;
   color: var(--dark-color-font);
 }
@@ -240,7 +240,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 3%;
-  padding-top: 8px;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   margin: 0 0;
   color: var(--less-dark-color-font);
 }
@@ -283,6 +285,7 @@ body {
   list-style: none;
   gap: 30px;
   margin-top: 50px;
+  margin-bottom: 0;
   padding-left: 0;
 }
 .list-style-ourteam {
@@ -296,40 +299,34 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
-  padding: 0 15px;
 }
-.wrapper-header {
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo-navi {
   display: flex;
-  width: 100%;
-  height: 80px;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 94px;
 }
-/* Pionowe umiejscowienie głównego napisu*/
-.main-title-wrapper {
-  padding-top: 200px;
-}
-
 .foto-margins {
   margin: 0 0;
 }
 .foto-portfolio-margins figure {
   margin: 0 0;
 }
-/* Stylizacja figcaption */
 .foto-description {
-  height: 108px;
   background-color: var(--white);
   text-align: center;
+  padding-bottom: 30px;
 }
 .foto-description-portoflio {
-  height: 110px;
   background-color: var(--white);
 }
 .portfolio-card-border {
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 /* Klasa która likwiduje przerwę między zdjeciem a jego opisem (figcaption) */
 .foto-ourteam {
@@ -341,12 +338,6 @@ body {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-up {
-  padding-top: 94px;
-}
-.section-down {
   padding-bottom: 94px;
 }
 .head-border {
