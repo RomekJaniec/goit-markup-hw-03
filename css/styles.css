@@ -174,7 +174,6 @@ body {
   letter-spacing: 2%;
   padding: 0;
   margin: 0;
-  margin-right: 371px;
   color: var(--dark-color-font);
 }
 .links-footer {
@@ -275,6 +274,7 @@ body {
 .list-style-lorem {
   display: flex;
   list-style: none;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -283,6 +283,7 @@ body {
 .list-style-speciality {
   display: flex;
   list-style: none;
+  justify-content: center;
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 0;
@@ -292,6 +293,7 @@ body {
 .list-style-ourteam {
   display: flex;
   list-style: none;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 0;
   padding-left: 0;
@@ -310,7 +312,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 94px;
+  gap: 93px;
 }
 .foto-margins {
   margin: 0 0;
@@ -343,4 +345,10 @@ body {
 }
 .head-border {
   border-bottom: 1px solid #e5e5e5;
+}
+.foto-whatwedo {
+  vertical-align: top;
+}
+.no-padding-top {
+  padding-top: 0; 
 }
